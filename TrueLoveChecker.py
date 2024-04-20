@@ -1,0 +1,16 @@
+name_1 = input("Please enter your name: ").lower()
+name_2 = input("Please enter your partner's name: ").lower()
+t = name_1.count("t") + name_2.count("t")
+r = name_1.count("r") + name_2.count("r")
+u = name_1.count("u") + name_2.count("u")
+e = name_1.count("e") + name_2.count("e")
+l = name_1.count("l") + name_2.count("l")
+o = name_1.count("o") + name_2.count("o")
+v = name_1.count("v") + name_2.count("v")
+word_1 = str(t+r+u+e)
+word_2 = str(l+o+v+e)
+combined = int(word_1 + word_2)
+if combined > 90 or combined < 10:
+    print(f"your score is {combined}, you go together like coke and mento.")
+else:
+    print(f"your score is {combined}, you go together alright.")
